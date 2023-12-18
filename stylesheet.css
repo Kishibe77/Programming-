@@ -1,0 +1,113 @@
+
+.container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    background-color: #B5CB99;
+}
+
+.HTML {
+  text-align: center;
+  background-color: #186F65;
+  width: 100%;
+}
+
+.title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 88px;
+  background-color: #FCE09B;
+  margin: 0px;
+}
+
+span{
+  color: indianred;
+}
+
+p.explain {
+  padding: 1rem 5rem;
+  color: whitesmoke;
+  text-align: left;
+  margin:0;
+}
+
+h2 {
+
+  text-align: center;
+  padding: 30px;
+}
+
+.linktext {
+
+  font-weight: bold;
+}
+
+.cat {
+  border-radius: 30%;
+  border: #B5CB99 solid 5px;
+  margin: 0 -20px;
+}
+
+.balloon1{
+    position: relative;
+    padding: 20px;
+    border-radius: 10px;
+    color: black;
+    text-align: left;
+    background-color: #FCF8E8;
+    margin-left: 20%;
+    width: 63%;
+    /* 最初から中央に位置させる。左が3割余白とか */
+  }
+
+  /* 画像 - 絶対配置で左上に配置 */
+.balloon1 .icon{
+    position: absolute;
+    left: -100px;
+    top: 0;
+  }
+  /* 三角アイコン */
+  .balloon1::before{
+    content: '';
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    left: -15px;
+    top: 20px;
+    border-right: 15px solid #FCF8E8;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+
+  }
+
+  .balloon2{
+    position: relative;
+    padding: 20px;
+    border-radius: 10px;
+    color: black;
+    text-align: justify;
+    background-color: #ECB390;
+    margin-left: 20%;
+    /* margin-right: 20%; */
+    width: 60%;
+          /* 右に余白を設ける */
+  }
+  /* 画像 - 絶対配置で右上に配置 */
+  .balloon2 .icon{
+    position: absolute;
+    right: -100px;
+    top: 0;
+  }
+  /* 三角アイコン */
+  .balloon2::before{
+    content: '';
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    right: -15px;
+    top: 20px;
+    border-left: 15px solid #ECB390;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+  }
